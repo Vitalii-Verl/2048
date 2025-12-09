@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>2048</title>
+</head>
+<body>
+  
+  <div class="score-container">
+    <div>Score: <span class="current-score">0</span></div>
+    <div>High core: <span class="high-score">0</span></div>
+  </div>
+
+  <div class="game-container">
+    <div class="game-grid">
+      <div class="grid-cell" data-row="0" data-col="0"></div>
+      <div class="grid-cell" data-row="0" data-col="1"></div>
+      <div class="grid-cell" data-row="0" data-col="2"></div>
+      <div class="grid-cell" data-row="0" data-col="3"></div>
+
+      <div class="grid-cell" data-row="1" data-col="0"></div>
+      <div class="grid-cell" data-row="1" data-col="1"></div>
+      <div class="grid-cell" data-row="1" data-col="2"></div>
+      <div class="grid-cell" data-row="1" data-col="3"></div>
+
+      <div class="grid-cell" data-row="2" data-col="0"></div>
+      <div class="grid-cell" data-row="2" data-col="1"></div>
+      <div class="grid-cell" data-row="2" data-col="2"></div>
+      <div class="grid-cell" data-row="2" data-col="3"></div>
+
+      <div class="grid-cell" data-row="3" data-col="0"></div>
+      <div class="grid-cell" data-row="3" data-col="1"></div>
+      <div class="grid-cell" data-row="3" data-col="2"></div>
+      <div class="grid-cell" data-row="3" data-col="3"></div>
+    </div>
+  </div>
+
+  <div class="control-container">
+    <div class="gamepad-dpad">
+        <button class="dpad-btn up" aria-label="Вверх">▲</button>
+        <button class="dpad-btn left" aria-label="Влево">◀</button>
+        <button class="dpad-btn right" aria-label="Вправо">▶</button>
+        <button class="dpad-btn down" aria-label="Вниз">▼</button>
+    </div>
+  </div>
+
+  <div class="game-over">
+    Game Over!
+    <button class="restart-game">Restart Game</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
